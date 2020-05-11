@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+	<test name="OnePlus_3T" preserve-order="true">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="false" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="614a12ef" />
+		<parameter name="deviceName" value="OnePlus_3T" />
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="successfulLogin" />
+					<include name="blankUserName" />
+<!--					<include name="invalidUserName" />-->
+<!--					<include name="blankPassword" />-->
+<!--					<include name="invalidPassword" />-->
+				</methods>
+			</class>
+
+<!--			<class name="com.qa.tests.LandingPageTests">-->
+<!--				<methods>-->
+<!--					<include name="landingPage" />-->
+<!--				</methods>-->
+<!--			</class>-->
+		</classes>
+	</test>
+</suite> <!-- Suite -->

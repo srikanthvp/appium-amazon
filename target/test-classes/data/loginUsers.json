@@ -1,0 +1,13 @@
+{
+	"invalidUser":{
+		"username":"wrong@good.com"
+	},
+	"invalidPassword":{
+		"username":"svpgulb@gmail.com",
+		"password":"invalidpassword"
+	},
+	"validUser":{
+		"username":"svpgulb@gmail.com",
+		"password":"NewPass"
+	}
+}
