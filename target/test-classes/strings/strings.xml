@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- SignIn Page Text -->
-    <string name="signIn_bar_text">Sign in to your account</string>
-
-    <!-- LoginUser Page Text -->
-    <string name="invalid_user_error_message">We cannot find an account with that email address</string>
-</resources>

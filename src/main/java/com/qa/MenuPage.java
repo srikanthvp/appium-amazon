@@ -8,14 +8,26 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class MenuPage extends BaseTest{
 	TestUtils utils = new TestUtils();
-	
-	@AndroidFindBy (xpath="//android.view.ViewGroup[@content-desc=\"test-Menu\"]/android.view.ViewGroup/android.widget.ImageView\n" + 
-			"") 
-	@iOSXCUITFindBy (xpath="//XCUIElementTypeOther[@name=\"test-Menu\"]/XCUIElementTypeOther")
-	private MobileElement settingsBtn;
-	
-	public void pressSettingsBtn() {
-		click(settingsBtn, "press Settings button");
+
+	@AndroidFindBy (id = "action_bar_burger_icon")
+	private MobileElement barBurgerIcon;
+
+	@AndroidFindBy (id = "action_bar_cart_image")
+	private MobileElement checkoutCartIcon;
+
+	@AndroidFindBy (id = "voice_btn_icon")
+	private MobileElement voiceBtnIcon;
+
+	public Boolean barBurgerIconPresent() {
+		return isElementVisible(barBurgerIcon);
+	}
+
+	public Boolean checkoutCartIconPresent() {
+		return isElementVisible(checkoutCartIcon);
+	}
+
+	public Boolean voiceBtnIconPresent() {
+		return isElementVisible(voiceBtnIcon);
 	}
 
 }

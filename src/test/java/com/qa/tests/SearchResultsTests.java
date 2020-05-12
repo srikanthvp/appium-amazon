@@ -1,8 +1,14 @@
 package com.qa.tests;
 
 import com.qa.BaseTest;
+import com.qa.Exceptions.loginFailedException;
+import com.qa.MenuPage;
 import com.qa.pages.Landing.LandingPage;
+import com.qa.pages.Login.LoginPasswordPage;
+import com.qa.pages.Product.ProductInfoPage;
+import com.qa.pages.SearchResult.SearchResultsPage;
 import com.qa.tests.helper.LandingPageHelper;
+import com.qa.tests.helper.SearchResultsHelper;
 import com.qa.utils.TestUtils;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -13,11 +19,15 @@ import org.testng.asserts.SoftAssert;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
-public class SearchResultsTests extends BaseTest{
+public class SearchResultsTests extends BaseTest {
 	LoginTests loginPage;
+	LoginPasswordPage loginPasswordPage;
 	LandingPage landingPage;
 	JSONObject loginUsers;
 	LandingPageHelper landingPageHelper;
+	SearchResultsPage searchResultsPage;
+	SearchResultsHelper searchResultsHelper;
+	ProductInfoPage productInfoPage;
 	TestUtils utils = new TestUtils();
 
 	//TODO : Data provider has to be improvised
@@ -50,6 +60,7 @@ public class SearchResultsTests extends BaseTest{
 		  utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
 		  loginPage = new LoginTests();
 		  landingPage = new LandingPage();
+		  loginPasswordPage = new LoginPasswordPage();
 		  landingPageHelper = new LandingPageHelper();
 		  launchApp();
 	  }
@@ -61,13 +72,21 @@ public class SearchResultsTests extends BaseTest{
 
 
 	  @Test
-	  public void landingPageSearchTV(){
-		  loginPage.successfulLogin();
+	  public void landingPageSearchTV() throws loginFailedException {
+		  landingPage = loginPasswordPage.loginWith(loginUsers.getJSONObject("validUser").getString("username"),
+				  loginUsers.getJSONObject("validUser").getString("password"));
 
-		  Assert.assertTrue(landingPage.landingPageHomeIconIsPresent());
-		  Assert.assertTrue(landingPage.landingPageSearchFldPresent());
+		  searchResultsPage = landingPage.landingPageSearchItem(landingPageHelper.searchTV);
 
-		  landingPage.landingPageSearch(landingPageHelper.searchTV);
+		  //SearchResultPage Assertions
+		  Assert.assertTrue(searchResultsPage.SearchFldPresent());
+
+		  //Menu Items Assertion
+		  Assert.assertTrue(searchResultsPage.barBurgerIconPresent());
+		  Assert.assertTrue(searchResultsPage.checkoutCartIconPresent());
+		  Assert.assertTrue(searchResultsPage.voiceBtnIconPresent());
+
+
 	  }
 
 }

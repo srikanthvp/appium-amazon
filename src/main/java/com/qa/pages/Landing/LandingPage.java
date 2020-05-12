@@ -17,8 +17,21 @@ public class LandingPage extends BaseTest {
 	@AndroidFindBy (id = "rs_search_src_text")
 	private MobileElement searchItemsFld;
 
-	@AndroidFindBy (id = "action_bar_burger_icon")
-	private MobileElement barBurgerIcon;
+	@AndroidFindBy (xpath = "//*[@text='English - EN']")
+	private MobileElement selectLanguage;
+
+	@AndroidFindBy (xpath = "//*[@text='Save Changes']")
+	private MobileElement saveChangesBtn;
+
+	@AndroidFindBy (xpath = "//*[@text='Fresh']")
+	private MobileElement freshItemsIcon;
+
+
+	public LandingPage selectLanguage(){
+		click(selectLanguage);
+		click(saveChangesBtn);
+		return new LandingPage();
+	}
 
 	public Boolean landingPageHomeIconIsPresent() {
 		return isElementVisible(landingPageHomeIcon);
@@ -28,14 +41,20 @@ public class LandingPage extends BaseTest {
 		return isElementVisible(searchItemsFld);
 	}
 
-	public Boolean landingPageBarBurgerIconPresent() {
-		return isElementVisible(barBurgerIcon);
+	public SearchResultsPage landingPageSearchItem(String Item){
+		click(searchItemsFld);
+		if (isElementVisible(searchItemsFld)) {
+			sendKeysAndPressEnter(searchItemsFld, Item);
+		}
+		return new SearchResultsPage();
 	}
 
-	public SearchResultsPage landingPageSearch(String data){
-		searchItemsFld.clear();
-		searchItemsFld.sendKeys(data);
-		searchItemsFld.sendKeys(Keys.ENTER);
-		return new SearchResultsPage();
+//	public SearchResultsPage landingPageSearchItem(String Item){
+//		sendKeysAndPressEnter(Item);
+//		return new SearchResultsPage();
+//	}
+
+	public Boolean freshItemsIconPresent(){
+		return isElementVisible(freshItemsIcon);
 	}
 }

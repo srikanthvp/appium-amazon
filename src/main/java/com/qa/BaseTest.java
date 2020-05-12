@@ -13,12 +13,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.ThreadContext;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -52,6 +52,8 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
@@ -64,6 +66,7 @@ public class BaseTest {
 	protected static ThreadLocal <String> dateTime = new ThreadLocal<String>();
 	protected static ThreadLocal <String> deviceName = new ThreadLocal<String>();
 	private static AppiumDriverLocalService server;
+	Actions action;
 
 	TestUtils utils = new TestUtils();
 	public SoftAssert softAssert;
@@ -317,6 +320,16 @@ public class BaseTest {
 	  e.sendKeys(txt);
   }
 
+  public void sendKeysAndPressEnter(MobileElement element, String input){
+	  	Actions actions = new Actions(getDriver());
+	  	actions.click(element).sendKeys(input).sendKeys(Keys.ENTER).build().perform();
+  }
+
+  public void backButtonTap(){
+	  	AndroidDriver driver = (AndroidDriver) getDriver();
+	  driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+  }
+
   public String getAttribute(MobileElement e, String attribute) {
 	  waitForVisibility(e);
 	  return e.getAttribute(attribute);
@@ -346,10 +359,10 @@ public class BaseTest {
 	  ((InteractsWithApps) getDriver()).launchApp();
   }
 
-  public MobileElement scrollToElement() {
+  public MobileElement scrollToElementText(String visibleText) {
 		return (MobileElement) ((FindsByAndroidUIAutomator) getDriver()).findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
-						+ "new UiSelector().description(\"test-Price\"));");
+						+ "new UiSelector().textContains(\""+visibleText+"\").instance(0))");
   }
 
   public void iOSScrollToElement() {

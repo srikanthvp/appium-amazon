@@ -11,19 +11,28 @@
 		<classes>
 			<class name="com.qa.tests.LoginTests">
 				<methods>
-					<include name="successfulLogin" />
 					<include name="blankUserName" />
-<!--					<include name="invalidUserName" />-->
-<!--					<include name="blankPassword" />-->
-<!--					<include name="invalidPassword" />-->
+					<include name="invalidUserName" />
+					<include name="blankPassword" />
+					<include name="invalidPassword" />
+					<include name="successfulLogin" />
 				</methods>
 			</class>
-
-<!--			<class name="com.qa.tests.LandingPageTests">-->
-<!--				<methods>-->
-<!--					<include name="landingPage" />-->
-<!--				</methods>-->
-<!--			</class>-->
+			<class name="com.qa.tests.LandingPageTests">
+				<methods>
+					<include name="landingPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.SearchResultsTests">
+				<methods>
+					<include name="landingPageSearchTV" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductInfoTests">
+				<methods>
+					<include name="ProductInfoDisplayed" />
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite> <!-- Suite -->

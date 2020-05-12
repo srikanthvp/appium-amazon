@@ -1,0 +1,893 @@
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:55:32.571 BaseTest:229 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:55:32.593 BaseTest:236 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:55:32.593 BaseTest:241 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:55:32.597 BaseTest:263 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 14:55:33.011 BaseTest:285 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 14:55:33.027 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:57:44.061 BaseTest:229 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:57:44.087 BaseTest:236 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:57:44.087 BaseTest:241 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 14:57:44.092 BaseTest:263 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 14:57:44.549 BaseTest:285 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 14:57:44.563 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:06:18.480 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:06:18.506 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:06:18.506 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:06:18.511 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:06:19.121 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:06:19.138 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:13.318 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:13.341 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:13.342 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:13.346 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:09:13.830 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:09:13.844 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:34.209 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:34.237 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:34.237 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:09:34.242 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:17:33.022 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26ea:684b:71ca:8896:2000:2234%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:17:33.052 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:25:57.416 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:25:57.437 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:25:57.437 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:25:57.441 BaseTest:255 - driver initialization failure. ABORT!!!
+java.lang.NullPointerException
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:25:57.453 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:41:00.582 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:41:00.625 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:41:00.627 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:41:00.635 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:41:01.423 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:798a:f15f:99ce:4bb6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:798a:f15f:99ce:4bb6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:41:01.449 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:42:24.334 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:42:24.383 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:42:24.384 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:42:24.393 BaseTest:255 - driver initialization failure. ABORT!!!
+java.lang.NullPointerException
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:42:24.421 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:42:41.069 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:42:41.119 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:42:41.120 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:43:11.057 BaseTest:255 - driver initialization failure. ABORT!!!
+java.lang.NullPointerException
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:43:11.092 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:46:17.151 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:46:17.180 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:46:17.180 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:46:41.619 BaseTest:255 - driver initialization failure. ABORT!!!
+java.lang.NullPointerException
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:46:41.641 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:47:25.154 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:47:25.177 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:47:25.178 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:48:27.407 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon%20Shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:51:08.283 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: The application at '/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon%20Shopping.apk' does not exist or is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:798a:f15f:99ce:4bb6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at '/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon%20Shopping.apk' does not exist or is not accessible
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:798a:f15f:99ce:4bb6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:51:08.311 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:51:27.570 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:51:27.598 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:51:27.599 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 15:51:40.351 BaseTest:255 - driver initialization failure. ABORT!!!
+java.lang.NullPointerException
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 15:51:46.041 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:52:41.562 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:52:41.590 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:52:41.591 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 15:52:45.074 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 16:11:29.379 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:798a:f15f:99ce:4bb6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Avd 'OnePlus_3T' is not available. please select your avd name from one of these: '(Pixel_2_API_29)'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:798a:f15f:99ce:4bb6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:11:29.408 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:13:33.752 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:13:33.773 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:13:33.774 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:13:33.777 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 16:14:17.635 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'in.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'in.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.amazon.mShop.splashscreen.StartupActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'in.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'in.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.amazon.mShop.splashscreen.StartupActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:14:17.651 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:17:30.832 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:17:30.853 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:17:30.853 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:17:30.857 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-09 16:17:39.626 BaseTest:255 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/srikanthparvatikar/Library/Android/sdk/platform-tools/adb -P 5037 -s 614a12ef shell pm install /data/local/tmp/appium_cache/da7ccac6d4df1ce15285077a91343a17bb753e32.apk' exited with code 1'; Stderr: ''; Code: '1'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/srikanthparvatikar/Library/Android/sdk/platform-tools/adb -P 5037 -s 614a12ef shell pm install /data/local/tmp/appium_cache/da7ccac6d4df1ce15285077a91343a17bb753e32.apk' exited with code 1'; Stderr: ''; Code: '1'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:17:39.643 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:10.823 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:10.843 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:10.844 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:10.848 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:24.609 BaseTest:253 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:31.382 LoginTests:61 - 
+****** starting test:invalidPassword******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:18:42.941 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: test-Username}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:269)
+	at com.qa.BaseTest.clear(BaseTest.java:282)
+	at com.qa.pages.Login.LoginUserNamePage.enterUserName(LoginPage.java:31)
+	at com.qa.tests.LoginTests.invalidPassword(LoginTests.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: test-Username})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@47fdece2 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: test-Username})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:44.621 BaseTest:146 - video path: videos/Android_OnePlus_3T/2020-05-09-16-18-10/LoginTests/invalidPassword.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:45.089 LoginTests:61 - 
+****** starting test:invalidUserName******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:18:56.741 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: test-Username}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:269)
+	at com.qa.BaseTest.clear(BaseTest.java:282)
+	at com.qa.pages.Login.LoginUserNamePage.enterUserName(LoginPage.java:31)
+	at com.qa.tests.LoginTests.invalidUserName(LoginTests.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: test-Username})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@513b269a (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: test-Username})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:58.295 BaseTest:146 - video path: videos/Android_OnePlus_3T/2020-05-09-16-18-10/LoginTests/invalidUserName.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:18:59.649 LoginTests:61 - 
+****** starting test:successfulLogin******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:19:11.690 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: test-Username}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:269)
+	at com.qa.BaseTest.clear(BaseTest.java:282)
+	at com.qa.pages.Login.LoginUserNamePage.enterUserName(LoginPage.java:31)
+	at com.qa.tests.LoginTests.successfulLogin(LoginTests.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: test-Username})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@79799281 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: test-Username})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:19:13.762 BaseTest:146 - video path: videos/Android_OnePlus_3T/2020-05-09-16-18-10/LoginTests/successfulLogin.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:19:20.240 ProductTests:64 - 
+****** starting test:validateProductOnProductDetailsPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:58:03.920 BaseTest:128 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:58:03.941 BaseTest:135 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:58:03.942 BaseTest:140 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:58:03.945 BaseTest:160 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 16:58:18.202 BaseTest:178 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 16:58:18.216 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:02:08.240 BaseTest:128 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:02:08.264 BaseTest:135 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:02:08.264 BaseTest:140 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:02:15.108 BaseTest:160 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:02:28.382 BaseTest:178 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 17:02:54.034 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:22.187 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:22.211 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:22.212 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:22.216 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:35.747 BaseTest:253 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:42.456 LoginTests:61 - 
+****** starting test:invalidUserName******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 17:04:47.164 TestListener:33 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: signin_to_yourAccount' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: '2401:4900:26c8:3ead:7ce0:f3ba:4671:17ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c0d4814a-4fdf-4e64-82f9-b457b269138e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:269)
+	at com.qa.BaseTest.getAttribute(BaseTest.java:311)
+	at com.qa.BaseTest.getText(BaseTest.java:319)
+	at com.qa.pages.Login.LoginUserNamePage.getSignInBarTxt(LoginPage.java:42)
+	at com.qa.tests.LoginTests.invalidUserName(LoginTests.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:04:48.488 BaseTest:146 - video path: videos/Android_OnePlus_3T/2020-05-09-17-04-21/LoginTests/invalidUserName.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:05:58.285 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:05:58.309 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:05:58.310 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:05:58.314 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:06:12.565 BaseTest:253 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:06:18.889 LoginTests:61 - 
+****** starting test:invalidUserName******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:06:22.637 BaseTest:325 - Sign In Page TextSign in to your account
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:06:23.467 BaseTest:146 - video path: videos/Android_OnePlus_3T/2020-05-09-17-05-57/LoginTests/invalidUserName.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:08:37.114 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:08:37.137 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:08:37.138 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:08:37.141 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:08:51.662 BaseTest:253 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:08:57.635 LoginTests:61 - 
+****** starting test:signIn******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:09:01.943 BaseTest:325 - Sign in to your account
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 17:09:03.259 BaseTest:146 - video path: videos/Android_OnePlus_3T/2020-05-09-17-08-36/LoginTests/signIn.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 23:55:48.636 BaseTest:203 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 23:55:48.663 BaseTest:210 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 23:55:48.664 BaseTest:215 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 23:55:48.670 BaseTest:235 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 23:56:02.901 BaseTest:253 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-09 23:56:03.492 LoginTests:62 - 
+****** starting test:invalidUserName******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-09 23:56:03.586 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

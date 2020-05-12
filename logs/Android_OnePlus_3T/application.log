@@ -1,0 +1,1582 @@
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:08:50.016 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:08:50.047 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:08:50.047 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:08:50.051 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:09:05.108 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:09:05.637 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:09:14.906 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:09:20.194 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 00:09:33.864 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[//*[@text='English - EN']}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:274)
+	at com.qa.BaseTest.click(BaseTest.java:297)
+	at com.qa.pages.Landing.LandingPage.selectLanguage(LandingPage.java:27)
+	at com.qa.tests.LandingPageTests.landingPage(LandingPageTests.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[//*[@text='English - EN']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@58309cce (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[//*[@text='English - EN']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:09:36.408 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-08-49/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:05.728 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:05.754 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:05.754 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:05.759 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:18.457 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:18.836 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:30.294 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:36.499 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 00:10:48.739 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[@text='English - EN']}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:274)
+	at com.qa.BaseTest.click(BaseTest.java:297)
+	at com.qa.pages.Landing.LandingPage.selectLanguage(LandingPage.java:27)
+	at com.qa.tests.LandingPageTests.landingPage(LandingPageTests.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@text='English - EN']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@9299364 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@text='English - EN']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:10:51.103 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-10-05/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:19.471 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:19.493 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:19.493 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:19.497 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:34.099 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:34.681 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:44.977 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:12:50.228 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:13:18.014 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-12-18/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:16:56.562 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:16:56.584 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:16:56.585 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:16:56.589 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:17:16.855 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:17:17.682 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:17:29.630 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:17:35.495 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 00:18:13.185 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[Save Changes}) (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:274)
+	at com.qa.BaseTest.click(BaseTest.java:297)
+	at com.qa.pages.Landing.LandingPage.selectLanguage(LandingPage.java:32)
+	at com.qa.tests.LandingPageTests.landingPage(LandingPageTests.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[Save Changes})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3ea28086 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[Save Changes})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:18:16.231 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-16-56/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:18:59.985 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:00.012 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:00.012 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:00.017 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:16.854 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:17.585 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:28.582 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:19:34.735 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:20:01.487 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-18-59/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:08.992 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:09.018 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:09.019 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:09.023 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:23.059 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:23.643 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 00:24:39.503 TestListener:33 - org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0b3ac7c3-557f-45f0-9be3-256a3088f279
+*** Element info: {Using=id, value=sign_in_button}
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:192)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:274)
+	at com.qa.BaseTest.click(BaseTest.java:297)
+	at com.qa.pages.Login.SignInPage.pressSignInBtn(SignInPage.java:18)
+	at com.qa.pages.Login.LoginPasswordPage.loginWith(LoginPasswordPage.java:64)
+	at com.qa.tests.LandingPageTests.landingPage(LandingPageTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0b3ac7c3-557f-45f0-9be3-256a3088f279
+*** Element info: {Using=id, value=sign_in_button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$0(ByChained.java:38)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	... 36 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:24:40.511 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-24-08/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:08.249 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:08.275 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:08.275 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:08.279 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:21.305 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:21.813 LandingPageTests:52 - 
+****** starting test:landingPage******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:32.207 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:37.381 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:25:59.645 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-25-07/LandingPageTests/landingPage.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:31:55.720 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:31:55.747 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:31:55.748 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:31:55.752 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:32:11.376 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:32:12.054 SearchResultsTests:53 - 
+****** starting test:landingPageSearchTV******
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 00:32:18.516 TestListener:33 - java.lang.NullPointerException
+	at com.qa.tests.SearchResultsTests.landingPageSearchTV(SearchResultsTests.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:32:20.100 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-31-55/SearchResultsTests/landingPageSearchTV.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:15.773 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:15.802 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:15.802 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:15.806 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:35.678 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:36.063 SearchResultsTests:53 - 
+****** starting test:landingPageSearchTV******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:53.754 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:33:59.714 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 00:34:26.495 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-00-33-15/SearchResultsTests/landingPageSearchTV.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:12.438 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:12.464 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:12.465 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:12.469 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:27.611 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:28.247 SearchResultsTests:60 - 
+****** starting test:landingPageSearchTV******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:45.932 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:51:52.081 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 01:52:25.391 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-01-51-11/SearchResultsTests/landingPageSearchTV.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:13:49.728 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:13:49.756 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:13:49.756 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:13:49.760 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:14:37.054 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:14:37.085 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:14:37.085 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:14:37.090 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:14:54.836 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:14:55.259 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:15:14.657 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:15:20.907 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 02:16:00.009 TestListener:33 - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 87b71822-1c32-43ac-b28c-4ed52517cde8
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains("Sanyo 165 cm").instance(0))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.qa.BaseTest.scrollToElementText(BaseTest.java:350)
+	at com.qa.pages.SearchResult.SearchResultsPage.searchResultListByItemName(SearchResultsPage.java:36)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 02:16:00.017 TestListener:33 - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 87b71822-1c32-43ac-b28c-4ed52517cde8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qa.listeners.TestListener.onTestFailure(TestListener.java:37)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:20:35.096 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:20:35.123 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:20:35.123 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:20:35.127 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:20:52.046 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:20:52.680 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:21:13.018 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:21:19.063 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:25:40.722 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:25:40.749 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:25:40.749 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:25:40.754 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:26:00.696 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:26:01.473 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:26:19.369 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:26:24.718 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:30:32.788 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:30:32.811 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:30:32.811 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:30:32.815 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:30:48.645 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:30:49.526 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:31:10.774 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:31:16.828 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 02:32:03.929 TestListener:33 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 09b6a394-8186-4c19-b0b2-74ac7887ae28
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains("Sanyo 165 cm").instance(0))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.qa.BaseTest.scrollToElementText(BaseTest.java:350)
+	at com.qa.pages.SearchResult.SearchResultsPage.searchResultListByItemName(SearchResultsPage.java:37)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:37:42.086 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:37:42.114 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:37:42.114 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:37:42.118 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:37:56.047 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:37:56.925 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:38:18.174 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:38:23.576 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 02:38:48.134 TestListener:33 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: rs_search_src_text' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7e6bb6e1-72b2-4bd3-bb7c-80210d53182e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+	at com.qa.pages.Landing.LandingPage.landingPageSearchItem(LandingPage.java:43)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:38:52.155 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-02-37-41/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:44:59.406 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:44:59.434 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:44:59.434 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:44:59.438 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:45:19.857 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:45:20.238 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:45:38.086 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:45:43.686 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 02:46:08.291 TestListener:33 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: rs_search_src_text' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 355e76e5-d0a0-4254-8095-0684d2767a9b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:274)
+	at com.qa.BaseTest.sendKeys(BaseTest.java:309)
+	at com.qa.pages.Landing.LandingPage.landingPageSearchItem(LandingPage.java:43)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:12.825 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-02-44-59/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:36.355 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:36.378 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:36.379 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:36.382 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:50.308 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:46:51.139 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:47:09.188 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:47:14.788 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:09.479 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:09.500 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:09.501 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:09.504 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:31.014 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:31.690 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:52.689 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:51:59.689 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:11.019 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:11.041 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:11.041 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:11.045 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:31.122 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:32.405 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:52.099 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:57:58.000 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 02:58:38.202 TestListener:33 - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: b7137fa6-3cfb-4e8c-9c45-4e31342a6bff
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains("Sanyo 165 cm").instance(0))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.qa.BaseTest.scrollToElementText(BaseTest.java:350)
+	at com.qa.pages.SearchResult.SearchResultsPage.searchResultListByItemName(SearchResultsPage.java:37)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 02:58:46.027 BaseTest:149 - video path: videos/Android_OnePlus_3T/2020-05-12-02-57-09/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:20.524 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:20.552 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:20.552 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:20.556 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:35.131 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:35.560 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:03:55.359 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:04:01.809 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:14:56.981 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:14:57.011 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:14:57.011 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:14:57.016 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:15:17.796 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:15:18.521 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:15:36.366 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:15:42.316 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:17:21.848 BaseTest:206 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:17:21.876 BaseTest:213 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:17:21.877 BaseTest:218 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:17:21.881 BaseTest:240 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:17:36.755 BaseTest:258 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:17:48.472 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:18:09.970 BaseTest:315 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:18:16.371 BaseTest:315 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 03:31:10.999 TestListener:33 - org.openqa.selenium.WebDriverException: org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 50ddfe57-378e-43e7-9a8b-df201d786fcd
+*** Element info: {Using=xpath, value=//*[@text='Fresh']}
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:192)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:274)
+	at com.qa.BaseTest.isElementVisible(BaseTest.java:278)
+	at com.qa.pages.Landing.LandingPage.freshItemsIconPresent(LandingPage.java:57)
+	at com.qa.pages.Landing.LandingPage.landingPageSearchItem(LandingPage.java:49)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 50ddfe57-378e-43e7-9a8b-df201d786fcd
+*** Element info: {Using=xpath, value=//*[@text='Fresh']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$0(ByChained.java:38)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	... 37 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:31:39.775 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:31:39.799 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:31:39.799 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:31:39.803 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:31:53.451 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:31:54.029 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:32:13.132 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:32:18.532 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 03:35:01.545 TestListener:33 - org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 007bab64-90b2-46d7-a997-a32510be534a
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains("Sanyo 165 cm").instance(0))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.qa.BaseTest.scrollToElementText(BaseTest.java:354)
+	at com.qa.pages.SearchResult.SearchResultsPage.searchResultListByItemName(SearchResultsPage.java:37)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 03:35:01.553 TestListener:33 - org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 007bab64-90b2-46d7-a997-a32510be534a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qa.listeners.TestListener.onTestFailure(TestListener.java:37)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:43:28.097 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:43:28.130 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:43:28.130 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:43:28.135 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:43:45.904 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:43:46.753 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:44:05.342 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:44:11.090 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 03:47:05.249 TestListener:33 - org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1ecd1f03-7596-4c90-8ac6-969a3f60e674
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains("Sanyo 165 cm").instance(0))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.qa.BaseTest.scrollToElementText(BaseTest.java:353)
+	at com.qa.pages.SearchResult.SearchResultsPage.searchResultListByItemName(SearchResultsPage.java:37)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:10.315 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:10.346 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:10.346 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:10.351 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:27.840 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:28.644 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:48.399 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 03:47:54.556 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:01:23.777 TestListener:33 - org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 55f7b65a-7e8b-4649-8989-e1cc2e84a9dc
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains("Sanyo 165 cm").instance(0))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.qa.BaseTest.scrollToElementText(BaseTest.java:353)
+	at com.qa.pages.SearchResult.SearchResultsPage.searchResultListByItemName(SearchResultsPage.java:37)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:01:29.934 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:01:29.961 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:01:29.961 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:01:29.966 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-12 04:02:11.603 BaseTest:259 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:02:11.621 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:04:08.787 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:04:08.814 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:04:08.814 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:04:08.819 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T FATAL] 2020-05-12 04:04:31.285 BaseTest:259 - driver initialization failure. ABORT!!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:04:31.304 TestListener:33 - java.lang.NullPointerException
+	at com.qa.listeners.TestListener.onTestSkipped(TestListener.java:92)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:06.618 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:06.647 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:06.647 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:06.651 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:19.809 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:20.337 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:36.884 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:10:42.654 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:12:29.546 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:12:29.573 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:12:29.573 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:12:29.578 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:12:46.967 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:12:59.283 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:13:20.045 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:13:26.081 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:14:44.928 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[@text='Fresh']}) (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:273)
+	at com.qa.BaseTest.isElementVisible(BaseTest.java:277)
+	at com.qa.pages.Landing.LandingPage.landingPageSearchItem(LandingPage.java:47)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@text='Fresh']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1c929f3f (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@text='Fresh']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:03.760 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:03.788 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:03.788 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:03.793 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:23.537 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:37.516 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:15:57.172 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:16:03.115 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:16:27.070 TestListener:33 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: rs_search_src_text' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bdcbb97d-d8c8-426c-9c61-4b2365feed0b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.qa.BaseTest.sendKeysAndPressEnter(BaseTest.java:321)
+	at com.qa.pages.Landing.LandingPage.landingPageSearchItem(LandingPage.java:46)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:16:30.406 BaseTest:148 - video path: videos/Android_OnePlus_3T/2020-05-12-04-15-03/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:17.700 BaseTest:205 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:17.728 BaseTest:212 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:17.728 BaseTest:217 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:17.732 BaseTest:239 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:31.491 BaseTest:257 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:32.279 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:52.327 BaseTest:314 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:17:57.968 BaseTest:314 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:18:59.904 TestListener:33 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.id: action_bar_burger_icon}) (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:273)
+	at com.qa.BaseTest.isElementVisible(BaseTest.java:277)
+	at com.qa.MenuPage.barBurgerIconPresent(MenuPage.java:22)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: action_bar_burger_icon})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6fd7dac7 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: action_bar_burger_icon})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:19:04.594 BaseTest:148 - video path: videos/Android_OnePlus_3T/2020-05-12-04-17-17/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:53:29.995 BaseTest:209 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:53:30.019 BaseTest:216 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:53:30.020 BaseTest:221 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:53:30.024 BaseTest:243 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:53:47.875 BaseTest:261 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:53:48.304 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:54:05.502 BaseTest:318 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:54:11.202 BaseTest:318 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 04:54:33.107 TestListener:33 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: rs_search_src_text' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srikanths-MBP', ip: 'fe80:0:0:0:1840:1aaf:f0b0:6ddf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, databaseEnabled: false, desired: {androidScreenshotPath: target/screenshots, app: /Users/srikanthparvatikar/D..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: UiAutomator2, deviceName: OnePlus_3T, nativeWebScreenshot: true, platformName: android, udid: 614a12ef}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A3003, deviceName: 614a12ef, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: 614a12ef, javascriptEnabled: true, locationContextEnabled: false, nativeWebScreenshot: true, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 614a12ef, viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 31d6ecfa-a6d0-4b71-8669-87db939d29fe
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:277)
+	at com.qa.BaseTest.isElementVisible(BaseTest.java:281)
+	at com.qa.pages.Landing.LandingPage.landingPageSearchItem(LandingPage.java:46)
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:54:37.058 BaseTest:152 - video path: videos/Android_OnePlus_3T/2020-05-12-04-53-29/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:56:59.801 BaseTest:209 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:56:59.829 BaseTest:216 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:56:59.829 BaseTest:221 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:56:59.833 BaseTest:243 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:57:13.378 BaseTest:261 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:57:14.112 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:57:31.369 BaseTest:318 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:57:37.057 BaseTest:318 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 04:58:28.727 BaseTest:152 - video path: videos/Android_OnePlus_3T/2020-05-12-04-56-59/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:21:52.165 BaseTest:209 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:21:52.193 BaseTest:216 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:21:52.193 BaseTest:221 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:21:52.197 BaseTest:243 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:22:07.202 BaseTest:261 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:22:08.083 ProductInfoTests:60 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:22:24.681 BaseTest:318 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:22:30.732 BaseTest:318 - login with NewPass
+[logs/Android_OnePlus_3T ERROR] 2020-05-12 05:23:13.233 TestListener:33 - java.lang.NullPointerException
+	at com.qa.tests.ProductInfoTests.ProductInfoDisplayed(ProductInfoTests.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:23:19.162 BaseTest:152 - video path: videos/Android_OnePlus_3T/2020-05-12-05-21-51/ProductInfoTests/ProductInfoDisplayed.mp4
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:28:51.606 BaseTest:209 - log path: logs/Android_OnePlus_3T
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:28:51.631 BaseTest:216 - load config.properties
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:28:51.632 BaseTest:221 - load strings/strings.xml
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:28:51.637 BaseTest:243 - appUrl is/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:29:05.650 BaseTest:261 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, androidScreenshotPath=target/screenshots, app=/Users/srikanthparvatikar/Downloads/appium-pageobjectmodel-master/target/test-classes/app/Amazon_Shopping.apk, appActivity=com.amazon.mShop.splashscreen.StartupActivity, appPackage=com.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=OnePlus_3T, nativeWebScreenshot=true, udid=614a12ef}, deviceApiLevel=28, deviceManufacturer=OnePlus, deviceModel=ONEPLUS A3003, deviceName=614a12ef, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=614a12ef, javascriptEnabled=true, locationContextEnabled=false, nativeWebScreenshot=true, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, takesScreenshot=true, udid=614a12ef, viewportRect={left=0, top=63, width=1080, height=1857}, warnings={}, webStorageEnabled=false}
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:29:06.481 ProductInfoTests:61 - 
+****** starting test:ProductInfoDisplayed******
+
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:29:24.479 BaseTest:318 - login with svpgulb@gmail.com
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:29:30.029 BaseTest:318 - login with NewPass
+[logs/Android_OnePlus_3T INFO ] 2020-05-12 05:30:19.554 BaseTest:152 - video path: videos/Android_OnePlus_3T/2020-05-12-05-28-51/ProductInfoTests/ProductInfoDisplayed.mp4

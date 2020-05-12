@@ -5,7 +5,10 @@ import com.qa.Exceptions.loginFailedException;
 import com.qa.MenuPage;
 import com.qa.pages.Landing.LandingPage;
 import com.qa.pages.Login.LoginPasswordPage;
+import com.qa.pages.Product.ProductInfoPage;
+import com.qa.pages.SearchResult.SearchResultsPage;
 import com.qa.tests.helper.LandingPageHelper;
+import com.qa.tests.helper.SearchResultsHelper;
 import com.qa.utils.TestUtils;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -16,11 +19,15 @@ import org.testng.asserts.SoftAssert;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
-public class LandingPageTests extends MenuPage {
+public class ProductInfoTests extends BaseTest {
+	LoginTests loginPage;
 	LoginPasswordPage loginPasswordPage;
 	LandingPage landingPage;
-	JSONObject loginUsers;
+	JSONObject loginUsers, productInfo;
 	LandingPageHelper landingPageHelper;
+	SearchResultsPage searchResultsPage;
+	SearchResultsHelper searchResultsHelper;
+	ProductInfoPage productInfoPage;
 	TestUtils utils = new TestUtils();
 
 	//TODO : Data provider has to be improvised
@@ -29,10 +36,11 @@ public class LandingPageTests extends MenuPage {
 		  softAssert = new SoftAssert();
 			InputStream datais = null;
 		  try {
-			  String dataFileName = "data/loginUsers.json";
+			  String dataFileName = "data/productInfo.json";
 			  datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
 			  JSONTokener tokener = new JSONTokener(datais);
-			  loginUsers = new JSONObject(tokener);
+			  productInfo = new JSONObject(tokener);
+
 		  } catch(Exception e) {
 			  e.printStackTrace();
 			  throw e;
@@ -51,27 +59,35 @@ public class LandingPageTests extends MenuPage {
 	  @BeforeMethod
 	  public void beforeMethod(Method m) {
 		  utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
-		  loginPasswordPage = new LoginPasswordPage();
+		  loginPage = new LoginTests();
 		  landingPage = new LandingPage();
+		  loginPasswordPage = new LoginPasswordPage();
 		  landingPageHelper = new LandingPageHelper();
+		  launchApp();
 	  }
 
 	  @AfterMethod
 	  public void afterMethod() {
+	  	closeApp();
 	  }
 
 
 	  @Test
-	  public void landingPage() throws loginFailedException {
+	  public void ProductInfoDisplayed() throws loginFailedException {
+		  landingPage = loginPasswordPage.loginWith(productInfo.getJSONObject("validUser").getString("username"),
+				  productInfo.getJSONObject("validUser").getString("password"));
 
-		  landingPage = loginPasswordPage.loginWith(loginUsers.getJSONObject("validUser").getString("username"),
-				  loginUsers.getJSONObject("validUser").getString("password"));
+		  searchResultsPage = landingPage.landingPageSearchItem(landingPageHelper.searchTV);
+		  productInfoPage = searchResultsPage.searchResultListByItemName(searchResultsHelper.searcgTVByContext);
+		  productInfoPage.useCurrentLocationIgnore();
 
-		  Assert.assertTrue(landingPage.landingPageHomeIconIsPresent());
-		  Assert.assertTrue(landingPage.landingPageSearchFldPresent());
-		  Assert.assertTrue(barBurgerIconPresent());
-		  Assert.assertTrue(checkoutCartIconPresent());
-		  Assert.assertTrue(voiceBtnIconPresent());
+		  //Product Title Validation
+		  Assert.assertTrue(productInfoPage.productTitle(productInfo.getJSONObject("SanyoTv").getString("productTitle")));
+
+		  //Menu Items Assertions
+		  Assert.assertTrue(searchResultsPage.barBurgerIconPresent());
+		  Assert.assertTrue(searchResultsPage.checkoutCartIconPresent());
+		  Assert.assertTrue(searchResultsPage.voiceBtnIconPresent());
 	  }
 
 }
