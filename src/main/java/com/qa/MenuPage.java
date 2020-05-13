@@ -6,6 +6,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
+	// This Menu Page class is collection of all web elements common in the App once login is successfull
 public class MenuPage extends BaseTest{
 	TestUtils utils = new TestUtils();
 

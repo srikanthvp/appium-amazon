@@ -8,6 +8,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.Keys;
 
+// Landing page Mobile elements
 public class LandingPage extends BaseTest {
 	TestUtils utils = new TestUtils();
 

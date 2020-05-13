@@ -22,9 +22,11 @@ import org.w3c.dom.NodeList;
 
 import com.qa.BaseTest;
 
+// Common Test utils
 public class TestUtils {
 	public static final long WAIT = 20;
-	
+
+	// XML parser
 	public HashMap<String, String> parseStringXML(InputStream file) throws Exception{
 		HashMap<String, String> stringMap = new HashMap<String, String>();
 		//Get Document Builder
@@ -55,13 +57,15 @@ public class TestUtils {
 		}
 		return stringMap;
 	}
-	
+
+	// Return date in specific format
 	public String dateTime() {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		Date date = new Date();
 		return dateFormat.format(date);
 	}
-	
+
+	// Logger function
 	public void log(String txt) {
 		BaseTest base = new BaseTest();
 		String msg = Thread.currentThread().getId() + ":" + base.getPlatform() + ":" + base.getDeviceName() + ":"
@@ -90,6 +94,7 @@ public class TestUtils {
 	    printWriter.close();
 	}
 
+	// logger function
 	public Logger log() {
 		return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
 	}

@@ -1,5 +1,6 @@
 package com.qa.tests;
 
+import android.util.EventLogTags;
 import com.qa.BaseTest;
 import com.qa.Exceptions.loginFailedException;
 import com.qa.MenuPage;
@@ -16,6 +17,7 @@ import org.testng.asserts.SoftAssert;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
+// Landing page after successful login
 public class LandingPageTests extends MenuPage {
 	LoginPasswordPage loginPasswordPage;
 	LandingPage landingPage;
@@ -61,7 +63,7 @@ public class LandingPageTests extends MenuPage {
 	  }
 
 
-	  @Test
+	  @Test(description = "validate the landing page after the user successfully logs in into the application")
 	  public void landingPage() throws loginFailedException {
 
 		  landingPage = loginPasswordPage.loginWith(loginUsers.getJSONObject("validUser").getString("username"),

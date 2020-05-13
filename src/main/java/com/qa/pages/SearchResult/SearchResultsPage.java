@@ -9,6 +9,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.Keys;
 
+// Search Results page Mobile elements
 public class SearchResultsPage extends MenuPage {
 	TestUtils utils = new TestUtils();
 

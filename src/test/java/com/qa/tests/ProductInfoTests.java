@@ -19,6 +19,7 @@ import org.testng.asserts.SoftAssert;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
+// Product information page tests
 public class ProductInfoTests extends BaseTest {
 	LoginTests loginPage;
 	LoginPasswordPage loginPasswordPage;
@@ -72,7 +73,7 @@ public class ProductInfoTests extends BaseTest {
 	  }
 
 
-	  @Test
+	  @Test(description = "product information page assertions")
 	  public void ProductInfoDisplayed() throws loginFailedException {
 		  landingPage = loginPasswordPage.loginWith(productInfo.getJSONObject("validUser").getString("username"),
 				  productInfo.getJSONObject("validUser").getString("password"));

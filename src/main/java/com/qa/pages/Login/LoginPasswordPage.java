@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 
+// Login Password page Mobile elements
 public class LoginPasswordPage extends BaseTest {
 	TestUtils utils = new TestUtils();
 	JSONObject loginUsers;

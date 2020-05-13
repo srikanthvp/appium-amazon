@@ -19,6 +19,7 @@ import org.testng.asserts.SoftAssert;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
+// search results page - user searches for a product in the landing page searchBar
 public class SearchResultsTests extends BaseTest {
 	LoginTests loginPage;
 	LoginPasswordPage loginPasswordPage;
@@ -71,7 +72,7 @@ public class SearchResultsTests extends BaseTest {
 	  }
 
 
-	  @Test
+	  @Test(description = "search items result page assertions")
 	  public void landingPageSearchTV() throws loginFailedException {
 		  landingPage = loginPasswordPage.loginWith(loginUsers.getJSONObject("validUser").getString("username"),
 				  loginUsers.getJSONObject("validUser").getString("password"));

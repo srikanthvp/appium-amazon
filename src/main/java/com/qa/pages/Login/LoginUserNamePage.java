@@ -6,6 +6,7 @@ import com.qa.utils.TestUtils;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
+// Login UserName page Mobile elements
 public class LoginUserNamePage extends BaseTest {
 	TestUtils utils = new TestUtils();
 

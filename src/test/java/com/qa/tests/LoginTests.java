@@ -68,7 +68,7 @@ public class LoginTests extends BaseTest{
 	  	closeApp();
 	  }
 
-	@Test
+	@Test(description = "validate user should not be able to login with blank user name")
 	public void blankUserName(){
 		String expectedSignInBarText = getStrings().get("signIn_bar_text");
 
@@ -85,7 +85,7 @@ public class LoginTests extends BaseTest{
 		Assert.assertTrue(loginUserNamePage.blankUserNameErrorMsgTxtIsPresent());
 	}
 
-	  @Test
+	  @Test(description = "validate user is not able to login with invalid user name")
 	  public void invalidUserName(){
 	  	String expectedSignInBarText = getStrings().get("signIn_bar_text");
 
@@ -103,7 +103,7 @@ public class LoginTests extends BaseTest{
 		  Assert.assertTrue(loginUserNamePage.invalidUserNameErrorMsgTxtIsPresent());
 	  }
 
-	  @Test
+	  @Test(description = "validate user is not able to login with blank password")
 	  public void blankPassword() {
 		String expectedSignInBarText = getStrings().get("signIn_bar_text");
 
@@ -124,7 +124,7 @@ public class LoginTests extends BaseTest{
 		Assert.assertTrue(loginPasswordPage.blankPasswordErrorMsgTxtIsPresent());
 		}
 
-		@Test
+		@Test(description = "validate user is not able to login with invalid password")
 		public void invalidPassword() {
 		String expectedSignInBarText = getStrings().get("signIn_bar_text");
 
@@ -147,7 +147,7 @@ public class LoginTests extends BaseTest{
 		Assert.assertTrue(loginPasswordPage.incorrectPasswordErrorMsgIsPresent());
 		}
 
-		@Test
+		@Test(description = "validate user is able to successfully login with valid credentials")
 		public void successfulLogin() {
 		String expectedSignInBarText = getStrings().get("signIn_bar_text");
 

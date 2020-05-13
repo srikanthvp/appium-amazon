@@ -8,11 +8,12 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+// Extent report class
 public class ExtentReport {
     static ExtentReports extent;
     final static String filePath = "Extent.html";
     static Map<Integer, ExtentTest> extentTestMap = new HashMap();
-    
+
     public synchronized static ExtentReports getReporter() {
         if (extent == null) {
         	ExtentHtmlReporter html = new ExtentHtmlReporter("Extent.html");

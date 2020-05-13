@@ -8,6 +8,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 import java.util.List;
 
+// Product details information page Mobile elements
 public class ProductInfoPage extends BaseTest {
 	TestUtils utils = new TestUtils();
 

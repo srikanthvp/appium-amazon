@@ -58,6 +58,8 @@ import io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyE
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
+
+// Base Test initializes all the POM pages Mobile elements and uses getters and setters to initialize attributes
 public class BaseTest {
 	protected static ThreadLocal <AppiumDriver> driver = new ThreadLocal<AppiumDriver>();
 	protected static ThreadLocal <Properties> props = new ThreadLocal<Properties>();
@@ -70,6 +72,8 @@ public class BaseTest {
 
 	TestUtils utils = new TestUtils();
 	public SoftAssert softAssert;
+
+	// Method used to initialize the thread local elements
 
 	  public AppiumDriver getDriver() {
 		  return driver.get();
@@ -122,7 +126,8 @@ public class BaseTest {
 	public BaseTest() {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
 	}
-	
+
+	// Before method starts recording before the method begins execution
 	@BeforeMethod
 	public void beforeMethod() {
 		((CanRecordScreen) getDriver()).startRecordingScreen();
@@ -159,6 +164,7 @@ public class BaseTest {
 		}
 	}
 
+	// Before suite is used to start the appium server before execution starts
 	@BeforeSuite
 	public void beforeSuite() throws Exception, Exception {
 		ThreadContext.put("ROUTINGKEY", "ServerLogs");
@@ -172,6 +178,7 @@ public class BaseTest {
 //		}
 	}
 
+	// This method validates if server is running or not. If not it returns a boolean false
 	public boolean checkIfAppiumServerIsRunnning(int port) throws Exception {
 	    boolean isAppiumServerRunning = false;
 	    ServerSocket socket;
@@ -187,6 +194,7 @@ public class BaseTest {
 	    return isAppiumServerRunning;
 	}
 
+	// Before test method initializes the run time params and sets the capabilities at run time
   @Parameters({"emulator", "platformName", "udid", "deviceName"})
   @BeforeTest
   public void beforeTest(@Optional("androidOnly")String emulator, String platformName, String udid, String deviceName) throws Exception {
@@ -272,11 +280,13 @@ public class BaseTest {
 	  }
   }
 
+  // This method is used to wait thread until the element is visible
   public void waitForVisibility(MobileElement e) {
 	  WebDriverWait wait = new WebDriverWait(getDriver(), TestUtils.WAIT);
 	  wait.until(ExpectedConditions.visibilityOf(e));
   }
 
+  // This method is used to validate if the element is visible
   public Boolean isElementVisible(MobileElement e){
 	  waitForVisibility(e);
 	  return e.isDisplayed();
@@ -291,16 +301,19 @@ public class BaseTest {
 //	  wait.until(ExpectedConditions.visibilityOf(e));
 //	  }
 
+	// This method is used to cleat a text field
   public void clear(MobileElement e) {
 	  waitForVisibility(e);
 	  e.clear();
   }
 
+  // This method is used to click an element
   public void click(MobileElement e) {
 	  waitForVisibility(e);
 	  e.click();
   }
 
+	// This method is used to click an element and log the info
   public void click(MobileElement e, String msg) {
 	  waitForVisibility(e);
 	  utils.log().info(msg);
@@ -308,11 +321,13 @@ public class BaseTest {
 	  e.click();
   }
 
+	// This method is used to send keys in an text box
   public void sendKeys(MobileElement e, String txt) {
 	  waitForVisibility(e);
 	  e.sendKeys(txt);
   }
 
+	// This method is used to send keys in an text box and log info
   public void sendKeys(MobileElement e, String txt, String msg) {
 	  waitForVisibility(e);
 	  utils.log().info(msg);
@@ -320,21 +335,25 @@ public class BaseTest {
 	  e.sendKeys(txt);
   }
 
+	// This method is used to send keys and along press enter
   public void sendKeysAndPressEnter(MobileElement element, String input){
 	  	Actions actions = new Actions(getDriver());
 	  	actions.click(element).sendKeys(input).sendKeys(Keys.ENTER).build().perform();
   }
 
+	// This method is used to simulate click on back button on mobile
   public void backButtonTap(){
 	  	AndroidDriver driver = (AndroidDriver) getDriver();
 	  driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
   }
 
+  // This method is used to get text attribute value of an MobileElement
   public String getAttribute(MobileElement e, String attribute) {
 	  waitForVisibility(e);
 	  return e.getAttribute(attribute);
   }
 
+  // This method is used to get text from an MobileElement
   public String getText(MobileElement e, String msg) {
 	  String txt = null;
 	  waitForVisibility(e);
@@ -351,20 +370,24 @@ public class BaseTest {
 	  return txt;
   }
 
+	// This method is used to close the mobile APP
   public void closeApp() {
 	  ((InteractsWithApps) getDriver()).closeApp();
   }
 
+	// This method is used to launch the mobile APP
   public void launchApp() {
 	  ((InteractsWithApps) getDriver()).launchApp();
   }
 
+  // This method is used to scroll to an element until it is found for Android device
   public MobileElement scrollToElementText(String visibleText) {
 		return (MobileElement) ((FindsByAndroidUIAutomator) getDriver()).findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
 						+ "new UiSelector().textContains(\""+visibleText+"\").instance(0))");
   }
 
+	// This method is used to scroll to an element until it is found for IOS device
   public void iOSScrollToElement() {
 	  RemoteWebElement element = (RemoteWebElement)getDriver().findElement(By.name("test-ADD TO CART"));
 	  String elementID = element.getId();
@@ -374,6 +397,7 @@ public class BaseTest {
 	  getDriver().executeScript("mobile:scroll", scrollObject);
   }
 
+  // This method is used to quit the driver after the execution is completed
   @AfterTest
   public void afterTest() {
 	  getDriver().quit();

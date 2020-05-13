@@ -22,6 +22,7 @@ import com.qa.BaseTest;
 import com.qa.reports.ExtentReport;
 import com.qa.utils.TestUtils;
 
+// Listener class implementation to define listener methods, implements interface ITestListener
 public class TestListener implements ITestListener {
 	TestUtils utils = new TestUtils();
 	
