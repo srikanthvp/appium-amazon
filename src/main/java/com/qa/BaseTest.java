@@ -1,14 +1,11 @@
 package com.qa;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Method;
 import java.net.ServerSocket;
 import java.net.URL;
-import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -17,18 +14,17 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.ThreadContext;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -37,7 +33,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
-import org.testng.internal.TestNGMethod;
 
 import com.aventstack.extentreports.Status;
 import com.qa.reports.ExtentReport;
@@ -52,9 +47,6 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
@@ -68,7 +60,6 @@ public class BaseTest {
 	protected static ThreadLocal <String> dateTime = new ThreadLocal<String>();
 	protected static ThreadLocal <String> deviceName = new ThreadLocal<String>();
 	private static AppiumDriverLocalService server;
-	Actions action;
 
 	TestUtils utils = new TestUtils();
 	public SoftAssert softAssert;
@@ -168,14 +159,14 @@ public class BaseTest {
 	@BeforeSuite
 	public void beforeSuite() throws Exception, Exception {
 		ThreadContext.put("ROUTINGKEY", "ServerLogs");
-//		server = getAppiumService();
-//		if(!checkIfAppiumServerIsRunnning(4723)) {
-//			server.start();
-//			server.clearOutPutStreams();
-//			utils.log().info("Appium server started");
-//		} else {
-//			utils.log().info("Appium server already running");
-//		}
+		server = getAppiumService();
+		if(!checkIfAppiumServerIsRunnning(4723)) {
+			server.start();
+			server.clearOutPutStreams();
+			utils.log().info("Appium server started");
+		} else {
+			utils.log().info("Appium server already running");
+		}
 	}
 
 	// This method validates if server is running or not. If not it returns a boolean false
@@ -278,6 +269,37 @@ public class BaseTest {
 			  stringsis.close();
 		  }
 	  }
+  }
+
+	public AppiumDriverLocalService getAppiumService() {
+		HashMap<String, String> environment = new HashMap<String, String>();
+		environment.put("PATH", "" + System.getenv("PATH"));
+		environment.put("ANDROID_HOME", "/Users/srikanthparvatikar/Library/Android/sdk");
+		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+				.usingDriverExecutable(new File("/usr/local/bin/node"))
+				.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
+				.usingPort(4723)
+				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+				.withEnvironment(environment)
+				.withLogFile(new File("ServerLogs/server.log")));
+	}
+
+  public JSONObject dataProvider(String dataFileName) throws IOException {
+	  InputStream datais = null;
+	  JSONObject jsonObject;
+	  try {
+		  datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
+		  JSONTokener tokener = new JSONTokener(datais);
+		  jsonObject = new JSONObject(tokener);
+	  } catch(Exception e) {
+		  e.printStackTrace();
+		  throw e;
+	  } finally {
+		  if(datais != null) {
+			  datais.close();
+		  }
+	  }
+	  return jsonObject;
   }
 
   // This method is used to wait thread until the element is visible

@@ -33,22 +33,7 @@ public class LoginTests extends BaseTest{
 	//TODO : Data provider has to be improvised
 	  @BeforeClass
 	  public void beforeClass() throws Exception {
-		  softAssert = new SoftAssert();
-			InputStream datais = null;
-		  try {
-			  String dataFileName = "data/loginUsers.json";
-			  datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
-			  JSONTokener tokener = new JSONTokener(datais);
-			  loginUsers = new JSONObject(tokener);
-		  } catch(Exception e) {
-			  e.printStackTrace();
-			  throw e;
-		  } finally {
-			  if(datais != null) {
-				  datais.close();
-			  }
-		  }
-
+		  loginUsers = dataProvider("data/loginUsers.json");
 	  }
 
 	  @AfterClass

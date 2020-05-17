@@ -2,7 +2,6 @@ package com.qa.tests;
 
 import com.qa.BaseTest;
 import com.qa.Exceptions.loginFailedException;
-import com.qa.MenuPage;
 import com.qa.pages.Landing.LandingPage;
 import com.qa.pages.Login.LoginPasswordPage;
 import com.qa.pages.Product.ProductInfoPage;
@@ -11,12 +10,9 @@ import com.qa.tests.helper.LandingPageHelper;
 import com.qa.tests.helper.SearchResultsHelper;
 import com.qa.utils.TestUtils;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import org.testng.asserts.SoftAssert;
 
-import java.io.InputStream;
 import java.lang.reflect.Method;
 
 // search results page - user searches for a product in the landing page searchBar
@@ -34,22 +30,7 @@ public class SearchResultsTests extends BaseTest {
 	//TODO : Data provider has to be improvised
 	  @BeforeClass
 	  public void beforeClass() throws Exception {
-		  softAssert = new SoftAssert();
-			InputStream datais = null;
-		  try {
-			  String dataFileName = "data/loginUsers.json";
-			  datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
-			  JSONTokener tokener = new JSONTokener(datais);
-			  loginUsers = new JSONObject(tokener);
-		  } catch(Exception e) {
-			  e.printStackTrace();
-			  throw e;
-		  } finally {
-			  if(datais != null) {
-				  datais.close();
-			  }
-		  }
-
+		  loginUsers = dataProvider("data/loginUsers.json");
 	  }
 
 	  @AfterClass

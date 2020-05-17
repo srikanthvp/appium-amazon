@@ -36,7 +36,7 @@ public class TestListener implements ITestListener {
 		
 		BaseTest base = new BaseTest();
 		File file = base.getDriver().getScreenshotAs(OutputType.FILE);
-		
+
 		byte[] encoded = null;
 		try {
 			encoded = Base64.encodeBase64(FileUtils.readFileToByteArray(file));
@@ -65,7 +65,7 @@ public class TestListener implements ITestListener {
 		try {
 			ExtentReport.getTest().fail("Test Failed", 
 					MediaEntityBuilder.createScreenCaptureFromPath(completeImagePath).build());
-			ExtentReport.getTest().fail("Test Failed", 
+			ExtentReport.getTest().fail("Test Failed",
 					MediaEntityBuilder.createScreenCaptureFromBase64String(new String(encoded, StandardCharsets.US_ASCII)).build());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -79,7 +79,7 @@ public class TestListener implements ITestListener {
 		BaseTest base = new BaseTest();
 		ExtentReport.startTest(result.getName(), result.getMethod().getDescription())
 		.assignCategory(base.getPlatform() + "_" + base.getDeviceName())
-		.assignAuthor("Omprakash");		
+		.assignAuthor("Srikanth");
 	}
 
 	@Override

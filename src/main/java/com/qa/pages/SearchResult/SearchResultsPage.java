@@ -1,7 +1,6 @@
 package com.qa.pages.SearchResult;
 
-import com.qa.BaseTest;
-import com.qa.MenuPage;
+import com.qa.CommonPage;
 import com.qa.pages.Product.ProductInfoPage;
 import com.qa.utils.TestUtils;
 import io.appium.java_client.MobileElement;
@@ -10,7 +9,7 @@ import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.Keys;
 
 // Search Results page Mobile elements
-public class SearchResultsPage extends MenuPage {
+public class SearchResultsPage extends CommonPage {
 	TestUtils utils = new TestUtils();
 
 	@AndroidFindBy (id = "action_bar_home_logo")

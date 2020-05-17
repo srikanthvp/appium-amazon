@@ -7,7 +7,8 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 	// This Menu Page class is collection of all web elements common in the App once login is successfull
-public class MenuPage extends BaseTest{
+public class CommonPage extends BaseTest{
+
 	TestUtils utils = new TestUtils();
 
 	@AndroidFindBy (id = "action_bar_burger_icon")
